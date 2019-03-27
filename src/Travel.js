@@ -1,12 +1,13 @@
 import React from "react";
 
-const Travel = ({ quote, image }) => (
-  <figure>
-    <img src={image} alt={""}/>
-    <figcaption>
-      <blockquote>{quote}</blockquote>
-    </figcaption>
-  </figure>
-);
+const Travel = ({ picture, destination, country }) => {
+  return (
+    <article>
+      <img src={picture} alt=""/>
+      <p>{destination}</p>
+      <p>{country}</p>
+    </article>
+  );
+}
 
 export default Travel;
